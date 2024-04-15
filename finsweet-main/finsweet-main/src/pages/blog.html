@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Beezzly</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    {{> navbar}}
+
+    <!-- #################
+    ##	featured post area start	##
+    ################# -->
+    <div class="blog_featured">
+      <div class="container">
+        <div class="blog_featured_content">
+          <div class="blog_featured_header">
+            <div class="post_author">
+              <div class="post_author_media">
+                <img src="../assets/images/sannndiegoo.jpg" alt="" />
+              </div>
+              <div class="post_author_content">
+                <h2 class="title">Jayden Ukpong</h2>
+                <p class="subtitle">Posted on 27th March 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="heading-1 title">
+            How can a website help your buissness.
+          </h2>
+
+          <p class="text-1 text">
+            Thinking of getting a website for your buissness? Mayb-
+          </p>
+
+          <a href="./blog-post.html" class="link">
+            Read More
+            <i class="bx bx-arrow-right icon"></i>
+          </a>
+        </div>
+
+        <div class="blog_featured_media">
+          <img src="../assets/images/blogpostimage2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- featured post area end -->
+
+    <!-- #################
+    ##	all post feed	##
+    ################# -->
+    <div class="blog_feed">
+      <div class="container">
+        <div class="area_header">
+          <h2 class="heading-2 title">All Post</h2>
+        </div>
+
+        <div class="blog_feed_content">
+          <div class="card">
+            <div class="card_media">
+              <img src="../assets/images/blogpostimage2.jpg" alt="" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">How can a website help your buissness.</h2>
+              <p class="card_text">
+                Thinking of getting a website for your buissness? Mayb-
+              </p>
+              <a href="./blog-post.html" class="card_link">
+                Read More <i class="bx bx-right-arrow-alt icon"></i>
+              </a>
+            </div>
+          </div>
+
+    <!-- all post feed end -->
+
+    {{> footer}}
+  </body>
+</html>
